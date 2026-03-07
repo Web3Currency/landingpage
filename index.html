@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Web3 Currency | Learn • Explore • Earn | The Standard for Web3 Navigation</title>
+    <meta name="title" content="Web3 Currency | Learn • Explore • Earn | The Standard for Web3 Navigation" />
+    <meta name="description" content="Web3 Currency (W3C) is a practical, WhatsApp-based community built to help beginners understand and use crypto safely. Explore our P2P Desk, Pi Network utility app, and structured Web3 learning." />
+    <meta name="keywords" content="Web3, Crypto, Cryptocurrency, Education, P2P, Blockchain, Testnet, Airdrop, Community, Web3 Currency, W3C, Jibola Adeyemo, JAKE, Crypto Trading, Wallet Setup, Digital Assets" />
+    <meta name="author" content="Web3 Currency" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://web3currency.online" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web3currency.online" />
+    <meta property="og:title" content="Web3 Currency (W3C)" />
+    <meta property="og:description" content="Learn crypto trading, explore Web3 opportunities, and access our secure P2P crypto desk." />
+    <meta property="og:image" content="https://web3currency.online/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://web3currency.online" />
+    <meta property="twitter:title" content="Web3 Currency (W3C)" />
+    <meta property="twitter:description" content="Learn crypto trading and join the Web3 Currency community" />
+    <meta property="twitter:image" content="https://web3currency.online/og-image.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      .font-sora {
+        font-family: 'Sora', sans-serif;
+      }
+      
+      /* Real Glass Plus Core */
+      .glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+        backdrop-filter: blur(25px) saturate(200%) brightness(1.1);
+        -webkit-backdrop-filter: blur(25px) saturate(200%) brightness(1.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 
+          0 8px 32px 0 rgba(0, 0, 0, 0.4),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glass::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("https://grainy-gradients.vercel.app/noise.svg");
+        opacity: 0.03;
+        pointer-events: none;
+        mix-blend-mode: overlay;
+      }
+
+      .glass-card {
+        background: linear-gradient(160deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+        backdrop-filter: blur(35px) saturate(220%) brightness(1.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 
+          0 25px 60px -12px rgba(0, 0, 0, 0.7),
+          inset 0 0 30px rgba(255, 255, 255, 0.03);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: translateY(0) scale(1);
+        will-change: transform, box-shadow;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .glass-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("https://grainy-gradients.vercel.app/noise.svg");
+        opacity: 0.05;
+        pointer-events: none;
+        mix-blend-mode: overlay;
+      }
+
+      .glass-card::after {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 300%;
+        height: 300%;
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        transition: 0.5s;
+        pointer-events: none;
+      }
+
+      .glass-card:hover::after {
+        top: -50%;
+        left: -50%;
+      }
+      
+      .glass-card:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-12px) scale(1.02) rotateX(1deg);
+        box-shadow: 
+          0 40px 80px -20px rgba(0, 0, 0, 0.9),
+          0 0 30px rgba(168, 85, 247, 0.1),
+          inset 0 0 15px rgba(255, 255, 255, 0.05);
+      }
+
+      .glass-button {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(18px) brightness(1.25);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .glass-button::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("https://grainy-gradients.vercel.app/noise.svg");
+        opacity: 0.05;
+        pointer-events: none;
+        mix-blend-mode: overlay;
+      }
+
+      .glass-button::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -160%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transform: rotate(45deg);
+        transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+        pointer-events: none;
+      }
+      
+      .glass-button:hover::after {
+        left: 160%;
+      }
+
+      .glass-button:hover {
+        background: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 
+          0 20px 40px rgba(0, 0, 0, 0.4),
+          0 0 40px rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px) scale(1.03);
+      }
+
+      .glass-input {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+      
+      .glass-input:focus {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #ffffff 0%, #a855f7 50%, #71717a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .hero-glow {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 70%);
+        filter: blur(100px);
+        z-index: -1;
+      }
+
+      .bg-grid {
+        background-image: 
+          linear-gradient(to right, rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+        position: relative;
+      }
+
+      .bg-grid::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      @keyframes liquid-glow {
+        0% { transform: translate(-10%, -10%) rotate(0deg); }
+        50% { transform: translate(10%, 10%) rotate(180deg); }
+        100% { transform: translate(-10%, -10%) rotate(360deg); }
+      }
+
+      .liquid-orb {
+        position: fixed;
+        width: 60vw;
+        height: 60vw;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%);
+        filter: blur(80px);
+        z-index: -1;
+        animation: liquid-glow 20s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 8s ease-in-out infinite;
+      }
+
+      /* Hide scrollbars but allow scrolling */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+
+      /* Perspective utility for 3D desks */
+      @keyframes glass-shine {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        20%, 100% { transform: translateX(200%) translateY(200%) rotate(45deg); }
+      }
+
+      .glass-shine-effect::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.05) 45%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.05) 55%,
+          transparent 100%
+        );
+        animation: glass-shine 10s infinite;
+        pointer-events: none;
+      }
+
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+
+      .clip-path-bubble-tail {
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+      }
+
+      /* Tactical 3D Effects */
+      .metallic-texture {
+        background: linear-gradient(
+          135deg,
+          #1a1c1e 0%,
+          #2c2f33 25%,
+          #3f444a 45%,
+          #2c2f33 55%,
+          #1a1c1e 100%
+        );
+        background-size: 200% 200%;
+        position: relative;
+      }
+
+      .metallic-texture::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+        pointer-events: none;
+      }
+
+      .scanline-effect {
+        background: linear-gradient(
+          to bottom,
+          transparent 50%,
+          rgba(0, 0, 0, 0.15) 50%
+        );
+        background-size: 100% 4px;
+        pointer-events: none;
+      }
+
+      .tactical-shadow {
+        box-shadow: 
+          0 10px 30px -10px rgba(0,0,0,0.8),
+          0 20px 50px -15px rgba(0,0,0,0.9),
+          inset 0 1px 1px rgba(255,255,255,0.1),
+          inset 0 -1px 1px rgba(0,0,0,0.5);
+      }
+
+      .button-3d-green {
+        background: linear-gradient(to bottom, #22c55e, #15803d);
+        box-shadow: 
+          0 6px 0 #14532d,
+          0 12px 20px rgba(0,0,0,0.4),
+          inset 0 1px 0 rgba(255,255,255,0.3);
+        transition: all 0.1s;
+      }
+
+      .button-3d-green:active {
+        transform: translateY(4px);
+        box-shadow: 
+          0 2px 0 #14532d,
+          0 4px 10px rgba(0,0,0,0.4),
+          inset 0 1px 0 rgba(255,255,255,0.3);
+      }
+
+      .button-3d-red {
+        background: linear-gradient(to bottom, #ef4444, #b91c1c);
+        box-shadow: 
+          0 6px 0 #7f1d1d,
+          0 12px 20px rgba(0,0,0,0.4),
+          inset 0 1px 0 rgba(255,255,255,0.3);
+        transition: all 0.1s;
+      }
+
+      .button-3d-red:active {
+        transform: translateY(4px);
+        box-shadow: 
+          0 2px 0 #7f1d1d,
+          0 4px 10px rgba(0,0,0,0.4),
+          inset 0 1px 0 rgba(255,255,255,0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <!-- Structured JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Web3 Currency (W3C)",
+      "url": "https://web3currency.online",
+      "logo": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20%284%29-ie2R59jxk6ypBF6z9h8b2PGAo71RHQ.png",
+      "description": "Learn crypto trading, explore Web3 opportunities, and access our secure P2P crypto desk.",
+      "founder": {
+        "@type": "Person",
+        "name": "Jibola Adeyemo (JAKE)"
+      },
+      "sameAs": [
+        "https://linktr.ee/0xjake8"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3currency.online"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Community",
+          "item": "https://web3currency.online#community"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "P2P Desk",
+          "item": "https://web3currency.online#p2p-desk"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Core content container for React hydration -->
+    <div id="root">
+      <!-- Semantic content layer (invisible to users, readable to crawlers and AI) -->
+      <div hidden>
+        <article>
+          <header>
+            <h1>Web3 Currency (W3C) - Learn, Explore, Earn</h1>
+            <p>The Standard for Web3 Navigation</p>
+          </header>
+
+          <section aria-label="Mission">
+            <h2>Mission</h2>
+            <p>Web3 Currency is a practical community built to help everyday people understand and use crypto the right way. We focus on breaking things down in simple terms, guiding members step by step, and creating a space where questions are welcome.</p>
+          </section>
+
+          <section aria-label="Vision">
+            <h2>Vision</h2>
+            <p>We believe blockchain should not feel complicated or out of reach. Our vision is to build a strong, informed community where people don't just follow trends, but understand what they're doing.</p>
+          </section>
+
+          <section aria-label="Community Description">
+            <h2>WhatsApp-Based Web3 Community</h2>
+            <p>Web3 Currency is a free WhatsApp-based learning and research community. Members learn about crypto, testnets, airdrops, and P2P trading in a safe, structured environment. The community focuses on education first, with real human support for technical queries and wallet setup.</p>
+          </section>
+
+          <section aria-label="Ecosystem Components">
+            <h2>Ecosystem Framework</h2>
+            <dl>
+              <dt>Free Learning Community</dt>
+              <dd>Structured WhatsApp space providing curated Web3 news and education with peer learning.</dd>
+              
+              <dt>User Support</dt>
+              <dd>Direct human assistance for technical queries and wallet setup guidance.</dd>
+              
+              <dt>W3C P2P DESK</dt>
+              <dd>Simplified P2P desk for converting digital assets to Nigerian Naira (NGN) safely. The desk connects users directly through WhatsApp at +2347032754611 for secure and efficient asset conversion.</dd>
+              
+              <dt>Pi Network Utility Application</dt>
+              <dd>Dedicated utility app on the Pi Network testnet featuring a project explorer and quest hub for structured learning.</dd>
+            </dl>
+          </section>
+
+          <section aria-label="P2P Desk Details">
+            <h2>W3C P2P DESK Explanation</h2>
+            <p>The W3C P2P Desk is not an exchange. It simply connects you directly with the desk through WhatsApp if you want to buy or sell crypto. All trades are coordinated manually. The desk is coordinated directly by the W3C team. When you tap the Buy or Sell button, you are connected to the desk on WhatsApp to continue the transaction. The official W3C desk WhatsApp number is +2347032754611.</p>
+          </section>
+
+          <section aria-label="Onboarding Process">
+            <h2>Onboarding Process</h2>
+            <ol>
+              <li><strong>Join the Community:</strong> Access our free learning space on WhatsApp.</li>
+              <li><strong>Introduce Yourself:</strong> Take time to understand how the group operates and meet other members.</li>
+              <li><strong>Learn the Basics:</strong> Get guidance on wallet setup, security best practices, and P2P trading principles.</li>
+              <li><strong>Engage and Contribute:</strong> Participate in discussions, ask questions, and help others in the community.</li>
+            </ol>
+          </section>
+
+          <section aria-label="About Web3 Currency">
+            <h2>About Web3 Currency (W3C)</h2>
+            <p>Web3 Currency (W3C) is a community where people learn about crypto and explore Web3 opportunities together. Members share research, ask questions, and learn how different blockchain projects work step by step. Web3 Currency does not promise or guarantee profits. Everything shared in the community is for learning, research, and discussion. Members are encouraged to always make their own decisions.</p>
+          </section>
+
+          <section aria-label="Frequently Asked Questions">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+              <dt>What is Web3 Currency (W3C)?</dt>
+              <dd>Web3 Currency (W3C) is a community where people learn about crypto and explore Web3 opportunities together. Members share research, ask questions, and learn how different blockchain projects work step by step.</dd>
+
+              <dt>Do I need crypto experience to join?</dt>
+              <dd>No. Beginners are welcome. You don't need any experience. Many people in the community started with zero knowledge and learned gradually by following discussions and asking questions.</dd>
+
+              <dt>Is the W3C P2P desk an exchange?</dt>
+              <dd>No. The W3C P2P desk is not an exchange. It simply connects you directly with the desk through WhatsApp if you want to buy or sell crypto. All trades are coordinated manually.</dd>
+
+              <dt>Who runs the P2P desk?</dt>
+              <dd>The desk is coordinated directly by the W3C team. When you tap the Buy or Sell button, you are connected to the desk on WhatsApp to continue the transaction.</dd>
+
+              <dt>What currency is used for transactions?</dt>
+              <dd>The P2P desk mainly works with Nigerian Naira (NGN). This means you can buy crypto with Naira or sell crypto and receive payment in Naira.</dd>
+
+              <dt>How do I start a trade?</dt>
+              <dd>Just tap the Buy or Sell button on the page. It will open a WhatsApp chat so you can message the desk directly and continue the transaction.</dd>
+
+              <dt>How do I know I am chatting with the correct desk number?</dt>
+              <dd>The official W3C desk WhatsApp number is +2347032754611. Always confirm that you are chatting with this number before starting any transaction.</dd>
+
+              <dt>Do I have to trade or buy crypto to be part of W3C?</dt>
+              <dd>No. Many people are just here to learn and explore Web3. Trading or using the P2P desk is optional. The main goal of the community is learning and understanding the space.</dd>
+
+              <dt>Is joining the W3C community free?</dt>
+              <dd>Yes. Joining the W3C community is free. The goal is to help people learn about Web3, understand crypto better, and explore opportunities together.</dd>
+
+              <dt>Does W3C guarantee profit?</dt>
+              <dd>No. W3C does not promise or guarantee profits. Everything shared in the community is for learning, research, and discussion. Members are encouraged to always make their own decisions.</dd>
+            </dl>
+          </section>
+
+          <footer>
+            <p>&copy; 2025 Web3 Currency. Founded by Jibola Adeyemo (JAKE). Learn at <a href="https://linktr.ee/0xjake8">linktr.ee/0xjake8</a></p>
+          </footer>
+        </article>
+      </div>
+    </div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
